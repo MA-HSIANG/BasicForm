@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BasicForm.Common.Heplers
+namespace BasicForm.Common.Helpers
 {
     public class AppSettingsHelper
     {

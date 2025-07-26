@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Security.Cryptography;
 
-namespace BasicForm.Common.Heplers
+namespace BasicForm.Common.Helpers
 {
     public class ConnStrDecryptHepler
     {

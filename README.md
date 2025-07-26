@@ -13,49 +13,31 @@
 4. 採用Base64加密連接字符串依照加密程式自動獲取加密後連接字符串
 
 ## 目錄
-<ol>
-  <li>BasicForm - 🖥️ UI 表現層（WinForms 介面）
-    <ol>
-      <li><strong>Controls</strong>：自訂 UI 控制項（按鈕、輸入框、列表等）</li>
-      <li><strong>Helpers</strong>：UI 輔助工具（控制項操作、樣式處理）</li>
-      <li><strong>Pages</strong>：各功能頁面（登入、主頁、設定頁等）</li>
-    </ol>
-  </li>
+<pre>
+BasicForm 🖥️ UI 表現層（WinForms 介面）
+  ├─ Controls 👉 自訂 UI 控制項（按鈕、輸入框、列表等）
+  ├─ Helpers 👉 UI 輔助工具（控制項操作、樣式處理）
+  └─ Pages 👉 各功能頁面（登入、主頁、設定頁等）
 
-  <li>BasicForm.BLL - ⚙️ 業務邏輯層（Service 層）
-    <ol>
-      <li><strong>Base</strong>：泛型服務基底類（IBaseService / BaseService）</li>
-      <li><strong>Interface</strong>：模組服務介面定義（IUserService、ILogService 等）</li>
-    </ol>
-  </li>
+BasicForm.BLL ⚙️ 業務邏輯層（Service 層）
+  ├─ Base 👉 泛型服務基底類（IBaseService / BaseService）
+  └─ Interface 👉 模組服務介面定義（IUserService、ILogService 等）
 
-  <li>BasicForm.DAL - 🗄️ 資料存取層（Repository 層）
-    <ol>
-      <li><strong>Base</strong>：泛型資料倉儲（IBaseRepository / BaseRepository）</li>
-    </ol>
-  </li>
+BasicForm.DAL 🗄️ 資料存取層（Repository 層）
+  └─ Base 👉 泛型資料倉儲（IBaseRepository / BaseRepository）
 
-  <li>BasicForm.Common - 🧰 公共工具層（通用設定與支援模組）
-    <ol>
-      <li><strong>App</strong>：全域設定（常數、快取 Key、共用旗標）</li>
-      <li><strong>DB</strong>：資料庫相關模組
-        <ol>
-          <li><strong>DbContext</strong>：EF Core 資料上下文類別</li>
-          <li><strong>DbFactory</strong>：DbContext 工廠方法（支援多資料庫）</li>
-        </ol>
-      </li>
-      <li><strong>Helpers</strong>：工具類別（加解密、轉型、驗證等通用方法）</li>
-      <li><strong>Settings</strong>：AppSettings 設定模型（對應 appsettings.json）</li>
-    </ol>
-  </li>
+BasicForm.Common 🧰 公共工具層（通用設定與支援模組）
+  ├─ App 👉 全域設定（常數、快取 Key、共用旗標）
+  ├─ DB 👉 資料庫相關模組
+  │ ├─ DbContexts 👉 EF Core 資料上下文類別
+  │ └─ EF 👉 DbContext 工廠方法（支援多資料庫）
+  ├─ Helpers 👉 工具類別（加解密、轉型、驗證等通用方法）
+  └─ Settings 👉 AppSettings 設定模型（對應 appsettings.json）
 
-  <li>BasicForm.Model - 📦 資料模型層（Entity 與 DTO）
-    <ol>
-      <li><strong>Base</strong>：模型基底類別（含 KeyModel、雙向綁定支援）</li>
-      <li><strong>Dtos</strong>：資料傳輸物件（DTO，提供 UI 與 Service 傳遞資料）</li>
-    </ol>
-  </li>
-</ol>
+BasicForm.Model 📦 資料模型層（Entity 與 DTO）
+  ├─ Base 👉 模型基底類別（含 KeyModel、雙向綁定支援）
+  └─ Dtos 👉 資料傳輸物件（DTO，提供 UI 與 Service 傳遞資料）
+</pre>
   
 ## 套件版本
 1. AntdUI - 2.0.9
